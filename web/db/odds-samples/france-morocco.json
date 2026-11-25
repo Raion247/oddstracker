@@ -1,0 +1,4278 @@
+{
+  "fixtureId": "id1000001653452525",
+  "match": {
+    "home": "France",
+    "away": "Morocco",
+    "startTime": "2026-07-09T20:00:00.000Z",
+    "tournament": "World Cup"
+  },
+  "scores": {
+    "fixtureId": "id1000001653452525",
+    "scores": {
+      "periods": {
+        "fulltime": {
+          "participant1Score": 2,
+          "participant2Score": 0,
+          "updatedAt": "2026-07-09T22:07:09.053537+00:00",
+          "startedAt": "2026-07-09T22:00:44+00:00"
+        },
+        "result": {
+          "participant1Score": 2,
+          "participant2Score": 0,
+          "updatedAt": "2026-07-09T21:30:07.686198+00:00",
+          "startedAt": "2026-07-09T20:00:52+00:00"
+        },
+        "p1": {
+          "participant1Score": 0,
+          "participant2Score": 0,
+          "updatedAt": "2026-07-09T20:51:10.701718+00:00",
+          "startedAt": "2026-07-09T21:09:27+00:00"
+        }
+      }
+    }
+  },
+  "totals": {
+    "settledOutcomes": 2278,
+    "winningOutcomes": 287,
+    "settlementMismatches": 11
+  },
+  "highestMultiThatHit": {
+    "marketId": "10336",
+    "marketName": "Correct Score Full Time",
+    "canonical": "CORRECT_SCORE_FT",
+    "line": "0",
+    "outcomeId": "10338",
+    "outcomeName": "2:0",
+    "playerId": "0",
+    "result": "WIN",
+    "settlementSource": "computed",
+    "expectedFromScore": "WIN",
+    "verified": true,
+    "peakPhase": "pre-match",
+    "snapshots": 113,
+    "open": {
+      "price": 6.8,
+      "at": "2026-07-04T23:36:28.675Z",
+      "book": "stake"
+    },
+    "peak": {
+      "price": 7.5,
+      "at": "2026-07-05T00:43:03.135Z",
+      "book": "bet365"
+    },
+    "perBook": {
+      "stake": {
+        "snapshots": 105,
+        "open": {
+          "price": 6.8,
+          "at": "2026-07-04T23:36:28.675Z"
+        },
+        "peak": {
+          "price": 7,
+          "at": "2026-07-09T20:01:20.246Z"
+        },
+        "close": {
+          "price": 1.7,
+          "at": "2026-07-09T21:55:24.617Z"
+        }
+      },
+      "bet365": {
+        "snapshots": 8,
+        "open": {
+          "price": 7.5,
+          "at": "2026-07-05T00:43:03.135Z"
+        },
+        "peak": {
+          "price": 7.5,
+          "at": "2026-07-05T00:43:03.135Z"
+        },
+        "close": {
+          "price": 7.5,
+          "at": "2026-07-09T19:50:27.754Z"
+        }
+      }
+    }
+  },
+  "winners": [
+    {
+      "marketId": "10336",
+      "marketName": "Correct Score Full Time",
+      "canonical": "CORRECT_SCORE_FT",
+      "line": "0",
+      "outcomeName": "2:0",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 6.8,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 7,
+            "at": "2026-07-09T20:01:20.246Z"
+          },
+          "close": {
+            "price": 1.7,
+            "at": "2026-07-09T21:55:24.617Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 7.5,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 7.5,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "close": {
+            "price": 7.5,
+            "at": "2026-07-09T19:50:27.754Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10256",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "0.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 3.1,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 5.75,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.45,
+            "at": "2026-07-09T20:44:37.167Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1058",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-1.75",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 3.05,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 5.5,
+            "at": "2026-07-09T21:22:36.511Z"
+          },
+          "close": {
+            "price": 1.2,
+            "at": "2026-07-09T21:48:19.965Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 3.44,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 5.71,
+            "at": "2026-07-09T21:23:05.542Z"
+          },
+          "close": {
+            "price": 1.17,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "102462",
+      "marketName": "Correct Score First Half",
+      "canonical": "CORRECT_SCORE_1H",
+      "line": "0",
+      "outcomeName": "0:0",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 3.1,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 5.25,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.35,
+            "at": "2026-07-09T20:44:37.167Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 2.75,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 3,
+            "at": "2026-07-05T10:11:52.066Z"
+          },
+          "close": {
+            "price": 2.5,
+            "at": "2026-07-09T20:08:17.145Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1060",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-1.5",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 2.55,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 4.2,
+            "at": "2026-07-09T21:23:20.492Z"
+          },
+          "close": {
+            "price": 1.12,
+            "at": "2026-07-09T21:44:27.018Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 2.662,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 4.08,
+            "at": "2026-07-09T21:23:05.542Z"
+          },
+          "close": {
+            "price": 1.096,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10208",
+      "marketName": "First Half Result",
+      "canonical": "FIRST_HALF_RESULT",
+      "line": "0",
+      "outcomeName": "X",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 2.37,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 4.05,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.45,
+            "at": "2026-07-09T20:44:37.167Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 2.25,
+            "at": "2026-07-05T00:59:05.565Z"
+          },
+          "peak": {
+            "price": 2.3,
+            "at": "2026-07-05T10:09:03.645Z"
+          },
+          "close": {
+            "price": 2.1,
+            "at": "2026-07-09T17:15:40.107Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10140",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "-1",
+      "outcomeName": "1",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 2.662,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 4,
+            "at": "2026-07-09T21:22:55.332Z"
+          },
+          "close": {
+            "price": 1.085,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10226",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1.5",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.7,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 3.35,
+            "at": "2026-07-09T21:23:20.492Z"
+          },
+          "close": {
+            "price": 1.65,
+            "at": "2026-07-09T21:37:41.222Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.75,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 3.62,
+            "at": "2026-07-09T21:22:34.849Z"
+          },
+          "close": {
+            "price": 1.625,
+            "at": "2026-07-09T21:47:38.969Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1062",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-1.25",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 2.26,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 3.55,
+            "at": "2026-07-09T21:23:09.427Z"
+          },
+          "close": {
+            "price": 1.7,
+            "at": "2026-07-09T21:53:09.198Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 2.31,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 3.485,
+            "at": "2026-07-09T21:23:05.542Z"
+          },
+          "close": {
+            "price": 1.045,
+            "at": "2026-07-09T21:50:33.191Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10600",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-0.5",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.71,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 3.45,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.3,
+            "at": "2026-07-09T20:44:37.167Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10166",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "1.75",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.33,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 3.25,
+            "at": "2026-07-09T21:23:42.651Z"
+          },
+          "close": {
+            "price": 1.55,
+            "at": "2026-07-09T21:53:56.458Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.34,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 3.18,
+            "at": "2026-07-09T21:22:34.849Z"
+          },
+          "close": {
+            "price": 1.51,
+            "at": "2026-07-09T21:53:28.009Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1010",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "2.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.89,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.6,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.1,
+            "at": "2026-07-09T21:59:28.992Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.8,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.9,
+            "at": "2026-07-05T07:31:17.503Z"
+          },
+          "close": {
+            "price": 1.8,
+            "at": "2026-07-09T06:27:24.890Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.88,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 3.19,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.136,
+            "at": "2026-07-09T21:59:12.133Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10170",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "2.25",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 2.18,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.75,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.6,
+            "at": "2026-07-09T21:37:41.222Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 2.147,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 3.07,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.656,
+            "at": "2026-07-09T21:34:02.410Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1064",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-1",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.96,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.95,
+            "at": "2026-07-09T21:23:09.427Z"
+          },
+          "close": {
+            "price": 1.25,
+            "at": "2026-07-09T21:30:14.187Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.99,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.93,
+            "at": "2026-07-09T21:22:55.332Z"
+          },
+          "close": {
+            "price": 1.275,
+            "at": "2026-07-09T21:30:14.689Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "108",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "1.5",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.28,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.6,
+            "at": "2026-07-09T21:23:42.651Z"
+          },
+          "close": {
+            "price": 1.4,
+            "at": "2026-07-09T21:30:14.187Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.33,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.33,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "close": {
+            "price": 1.3,
+            "at": "2026-07-09T20:08:17.145Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.26,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.63,
+            "at": "2026-07-09T21:22:55.332Z"
+          },
+          "close": {
+            "price": 1.352,
+            "at": "2026-07-09T21:29:54.785Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10172",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "2.75",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.69,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.35,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.55,
+            "at": "2026-07-09T21:55:24.617Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.69,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.52,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.46,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10228",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "2.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.34,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.06,
+            "at": "2026-07-09T21:59:28.992Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.32,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.285,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.48,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10240",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "0.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 2.14,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.15,
+            "at": "2026-07-09T20:02:15.453Z"
+          },
+          "close": {
+            "price": 1.03,
+            "at": "2026-07-09T21:57:50.752Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 2.04,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.26,
+            "at": "2026-07-09T19:48:08.793Z"
+          },
+          "close": {
+            "price": 1.16,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10164",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "1.25",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.17,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.15,
+            "at": "2026-07-09T21:23:42.651Z"
+          },
+          "close": {
+            "price": 1.95,
+            "at": "2026-07-09T21:28:50.691Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.147,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.22,
+            "at": "2026-07-09T21:22:55.332Z"
+          },
+          "close": {
+            "price": 1.7,
+            "at": "2026-07-09T21:42:18.229Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1054",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-2.25",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.19,
+            "at": "2026-07-07T20:01:37.260Z"
+          },
+          "peak": {
+            "price": 2.15,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.4,
+            "at": "2026-07-09T21:55:32.131Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.143,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.216,
+            "at": "2026-07-09T21:30:20.343Z"
+          },
+          "close": {
+            "price": 1.575,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "102206",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "0.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 2.17,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.18,
+            "at": "2026-07-07T21:28:27.578Z"
+          },
+          "close": {
+            "price": 1.14,
+            "at": "2026-07-09T20:53:27.739Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10602",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-0.25",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 2.1,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.16,
+            "at": "2026-07-07T21:28:27.578Z"
+          },
+          "close": {
+            "price": 2,
+            "at": "2026-07-09T20:24:22.487Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1066",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-0.75",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.71,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 2.15,
+            "at": "2026-07-09T21:20:36.642Z"
+          },
+          "close": {
+            "price": 1.18,
+            "at": "2026-07-09T21:30:14.187Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.69,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 2.155,
+            "at": "2026-07-09T21:23:05.542Z"
+          },
+          "close": {
+            "price": 1.115,
+            "at": "2026-07-09T21:34:02.410Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10174",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "3",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.5,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.85,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.22,
+            "at": "2026-07-09T21:55:24.617Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.43,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.985,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.144,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "101",
+      "marketName": "Full Time Result",
+      "canonical": "FULL_TIME_RESULT",
+      "line": "0",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.57,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.8,
+            "at": "2026-07-09T21:18:37.328Z"
+          },
+          "close": {
+            "price": 1.01,
+            "at": "2026-07-09T21:39:11.034Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.6,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.63,
+            "at": "2026-07-05T01:42:43.797Z"
+          },
+          "close": {
+            "price": 1.6,
+            "at": "2026-07-09T19:59:13.246Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.631,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.86,
+            "at": "2026-07-09T21:21:18.112Z"
+          },
+          "close": {
+            "price": 1.006,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1068",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-0.5",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.57,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.8,
+            "at": "2026-07-09T21:18:37.328Z"
+          },
+          "close": {
+            "price": 1.8,
+            "at": "2026-07-09T21:23:53.114Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10162",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "1",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.25,
+            "at": "2026-07-09T20:46:13.379Z"
+          },
+          "peak": {
+            "price": 1.75,
+            "at": "2026-07-09T21:23:42.651Z"
+          },
+          "close": {
+            "price": 1.6,
+            "at": "2026-07-09T21:28:50.691Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.02,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.79,
+            "at": "2026-07-09T21:22:55.332Z"
+          },
+          "close": {
+            "price": 1.72,
+            "at": "2026-07-09T21:29:27.764Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1052",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-2.5",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.35,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "peak": {
+            "price": 1.7,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.35,
+            "at": "2026-07-09T21:55:24.617Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.109,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.76,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.315,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "101905",
+      "marketName": "Double Chance First Half",
+      "canonical": "DOUBLE_CHANCE",
+      "line": "0",
+      "outcomeName": "2X",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.72,
+            "at": "2026-07-08T20:01:37.066Z"
+          },
+          "peak": {
+            "price": 1.73,
+            "at": "2026-07-08T23:56:56.133Z"
+          },
+          "close": {
+            "price": 1.3,
+            "at": "2026-07-09T20:37:29.163Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.66,
+            "at": "2026-07-05T00:59:05.565Z"
+          },
+          "peak": {
+            "price": 1.72,
+            "at": "2026-07-05T10:09:03.645Z"
+          },
+          "close": {
+            "price": 1.57,
+            "at": "2026-07-09T19:56:34.552Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10146",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "-3",
+      "outcomeName": "2",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.109,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.665,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.285,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10176",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "3.25",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.4,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.55,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.55,
+            "at": "2026-07-09T21:53:54.355Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.332,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.656,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.256,
+            "at": "2026-07-09T21:50:33.191Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10224",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "0.5",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.14,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.5,
+            "at": "2026-07-09T21:20:36.642Z"
+          },
+          "close": {
+            "price": 1.5,
+            "at": "2026-07-09T21:50:19.122Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.15,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.568,
+            "at": "2026-07-09T21:22:34.849Z"
+          },
+          "close": {
+            "price": 1.344,
+            "at": "2026-07-09T21:25:52.616Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "101902",
+      "marketName": "Double Chance Full Time",
+      "canonical": "DOUBLE_CHANCE",
+      "line": "0",
+      "outcomeName": "12",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.2,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.55,
+            "at": "2026-07-09T21:21:09.425Z"
+          },
+          "close": {
+            "price": 1.5,
+            "at": "2026-07-09T21:23:53.448Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.286,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.515,
+            "at": "2026-07-09T21:22:55.332Z"
+          },
+          "close": {
+            "price": 1.01,
+            "at": "2026-07-09T21:42:45.049Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10160",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "0.75",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.25,
+            "at": "2026-07-09T21:13:42.052Z"
+          },
+          "peak": {
+            "price": 1.5,
+            "at": "2026-07-09T21:23:20.492Z"
+          },
+          "close": {
+            "price": 1.4,
+            "at": "2026-07-09T21:28:50.691Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.01,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.504,
+            "at": "2026-07-09T21:22:55.332Z"
+          },
+          "close": {
+            "price": 1.295,
+            "at": "2026-07-09T21:25:52.616Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1050",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-2.75",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.5,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "peak": {
+            "price": 1.5,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.22,
+            "at": "2026-07-09T21:55:24.617Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.053,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.49,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.18,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1070",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-0.25",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.39,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.5,
+            "at": "2026-07-09T21:18:37.328Z"
+          },
+          "close": {
+            "price": 1.5,
+            "at": "2026-07-09T21:53:22.000Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.345,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.49,
+            "at": "2026-07-09T21:21:18.112Z"
+          },
+          "close": {
+            "price": 1.056,
+            "at": "2026-07-09T21:30:14.689Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1012",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "3.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.34,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.45,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.3,
+            "at": "2026-07-09T21:39:11.034Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.3,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.33,
+            "at": "2026-07-05T01:42:43.797Z"
+          },
+          "close": {
+            "price": 1.33,
+            "at": "2026-07-09T20:08:17.145Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.28,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.49,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.09,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10598",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-0.75",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.47,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.49,
+            "at": "2026-07-07T21:28:27.578Z"
+          },
+          "close": {
+            "price": 1.37,
+            "at": "2026-07-09T20:00:03.094Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10258",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "1.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.45,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.45,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "close": {
+            "price": 1.07,
+            "at": "2026-07-09T20:29:59.857Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10178",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "3.75",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.24,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.3,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.2,
+            "at": "2026-07-09T21:46:39.191Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.171,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.44,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.25,
+            "at": "2026-07-09T21:42:18.229Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "102220",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "0.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.39,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.39,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "close": {
+            "price": 1.08,
+            "at": "2026-07-09T20:44:37.167Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "106",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "0.5",
+      "outcomeName": "Over",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.25,
+            "at": "2026-07-09T21:16:47.191Z"
+          },
+          "peak": {
+            "price": 1.35,
+            "at": "2026-07-09T21:20:47.669Z"
+          },
+          "close": {
+            "price": 1.3,
+            "at": "2026-07-09T21:28:50.691Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.06,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.07,
+            "at": "2026-07-09T18:02:12.930Z"
+          },
+          "close": {
+            "price": 1.06,
+            "at": "2026-07-09T20:08:17.145Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.018,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.344,
+            "at": "2026-07-09T21:22:34.849Z"
+          },
+          "close": {
+            "price": 1.225,
+            "at": "2026-07-09T21:25:52.616Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10180",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "4",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.12,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "peak": {
+            "price": 1.12,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.08,
+            "at": "2026-07-09T21:39:11.034Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.083,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.296,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.096,
+            "at": "2026-07-09T21:42:18.229Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10182",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "4.25",
+      "outcomeName": "Under",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.068,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.256,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.085,
+            "at": "2026-07-09T21:31:48.224Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10242",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.21,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.22,
+            "at": "2026-07-09T20:00:57.529Z"
+          },
+          "close": {
+            "price": 1.04,
+            "at": "2026-07-09T21:13:09.530Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.22,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.25,
+            "at": "2026-07-09T19:25:43.078Z"
+          },
+          "close": {
+            "price": 1.016,
+            "at": "2026-07-09T21:46:27.057Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "102208",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.22,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.25,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.25,
+            "at": "2026-07-09T20:40:56.652Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1048",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-3",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.22,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "peak": {
+            "price": 1.22,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.16,
+            "at": "2026-07-09T21:46:39.191Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.05,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.24,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.08,
+            "at": "2026-07-09T21:50:33.191Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1072",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "0",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.21,
+            "at": "2026-07-07T20:01:37.260Z"
+          },
+          "peak": {
+            "price": 1.23,
+            "at": "2026-07-09T16:37:21.878Z"
+          },
+          "close": {
+            "price": 1.15,
+            "at": "2026-07-09T21:23:53.114Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10214",
+      "marketName": "Draw No Bet",
+      "canonical": "DRAW_NO_BET",
+      "line": "0",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.22,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.23,
+            "at": "2026-07-04T23:38:17.508Z"
+          },
+          "close": {
+            "price": 1.01,
+            "at": "2026-07-09T21:30:14.187Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.2,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.2,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "close": {
+            "price": 1.2,
+            "at": "2026-07-09T19:50:27.754Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10230",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.09,
+            "at": "2026-07-08T20:01:37.066Z"
+          },
+          "peak": {
+            "price": 1.18,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.14,
+            "at": "2026-07-09T21:46:39.191Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.08,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.22,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.025,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10592",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-1.5",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.1,
+            "at": "2026-07-09T20:00:03.094Z"
+          },
+          "peak": {
+            "price": 1.22,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.22,
+            "at": "2026-07-09T20:25:38.406Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1046",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-3.25",
+      "outcomeName": "2",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.18,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "peak": {
+            "price": 1.18,
+            "at": "2026-07-09T21:30:14.187Z"
+          },
+          "close": {
+            "price": 1.14,
+            "at": "2026-07-09T21:40:30.669Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.155,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "peak": {
+            "price": 1.185,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.05,
+            "at": "2026-07-09T21:44:44.770Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1014",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "4.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "bet365": {
+          "open": {
+            "price": 1.11,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.12,
+            "at": "2026-07-08T19:14:20.484Z"
+          },
+          "close": {
+            "price": 1.11,
+            "at": "2026-07-09T20:08:17.145Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.056,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.184,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.03,
+            "at": "2026-07-09T21:50:33.191Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1074",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "0.25",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.17,
+            "at": "2026-07-07T20:01:37.260Z"
+          },
+          "peak": {
+            "price": 1.18,
+            "at": "2026-07-08T03:41:28.365Z"
+          },
+          "close": {
+            "price": 1.17,
+            "at": "2026-07-09T20:00:03.094Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.12,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.15,
+            "at": "2026-07-09T19:50:20.717Z"
+          },
+          "close": {
+            "price": 1.125,
+            "at": "2026-07-09T21:25:52.616Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10608",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "0.5",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.15,
+            "at": "2026-07-09T20:00:03.094Z"
+          },
+          "peak": {
+            "price": 1.16,
+            "at": "2026-07-09T20:02:48.556Z"
+          },
+          "close": {
+            "price": 1.06,
+            "at": "2026-07-09T20:29:59.857Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "101902",
+      "marketName": "Double Chance Full Time",
+      "canonical": "DOUBLE_CHANCE",
+      "line": "0",
+      "outcomeName": "1X",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.15,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.16,
+            "at": "2026-07-09T20:02:15.453Z"
+          },
+          "close": {
+            "price": 1.08,
+            "at": "2026-07-09T21:28:50.691Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.147,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.147,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "close": {
+            "price": 1,
+            "at": "2026-07-09T21:42:16.422Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1076",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "0.5",
+      "outcomeName": "1",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.15,
+            "at": "2026-07-09T16:37:21.878Z"
+          },
+          "peak": {
+            "price": 1.15,
+            "at": "2026-07-09T16:37:21.878Z"
+          },
+          "close": {
+            "price": 1.15,
+            "at": "2026-07-09T17:38:19.883Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10184",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "4.75",
+      "outcomeName": "Under",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.012,
+            "at": "2026-07-07T15:03:55.254Z"
+          },
+          "peak": {
+            "price": 1.15,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.15,
+            "at": "2026-07-09T20:28:46.400Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "101905",
+      "marketName": "Double Chance First Half",
+      "canonical": "DOUBLE_CHANCE",
+      "line": "0",
+      "outcomeName": "1X",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.13,
+            "at": "2026-07-08T20:01:37.066Z"
+          },
+          "peak": {
+            "price": 1.15,
+            "at": "2026-07-09T20:03:10.485Z"
+          },
+          "close": {
+            "price": 1.02,
+            "at": "2026-07-09T20:37:29.163Z"
+          }
+        },
+        "bet365": {
+          "open": {
+            "price": 1.11,
+            "at": "2026-07-05T00:59:05.565Z"
+          },
+          "peak": {
+            "price": 1.11,
+            "at": "2026-07-05T00:59:05.565Z"
+          },
+          "close": {
+            "price": 1.11,
+            "at": "2026-07-09T19:56:34.552Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10137",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "1",
+      "outcomeName": "1",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.147,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.147,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "close": {
+            "price": 1.07,
+            "at": "2026-07-09T21:25:52.616Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1044",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-3.5",
+      "outcomeName": "2",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.04,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.144,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.045,
+            "at": "2026-07-09T21:45:06.768Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10149",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "-4",
+      "outcomeName": "2",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.085,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "peak": {
+            "price": 1.11,
+            "at": "2026-07-09T21:29:54.785Z"
+          },
+          "close": {
+            "price": 1.025,
+            "at": "2026-07-09T21:58:44.486Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1042",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-3.75",
+      "outcomeName": "2",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.085,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "peak": {
+            "price": 1.09,
+            "at": "2026-07-09T21:30:30.565Z"
+          },
+          "close": {
+            "price": 1.055,
+            "at": "2026-07-09T21:42:18.229Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10260",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "2.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.07,
+            "at": "2026-07-09T20:00:03.094Z"
+          },
+          "peak": {
+            "price": 1.08,
+            "at": "2026-07-09T20:00:57.529Z"
+          },
+          "close": {
+            "price": 1.05,
+            "at": "2026-07-09T20:17:43.139Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10186",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "5",
+      "outcomeName": "Under",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.03,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.075,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.075,
+            "at": "2026-07-09T20:28:46.400Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10188",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "5.25",
+      "outcomeName": "Under",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.07,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "peak": {
+            "price": 1.07,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.07,
+            "at": "2026-07-09T20:28:46.400Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1078",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "0.75",
+      "outcomeName": "1",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.029,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.064,
+            "at": "2026-07-09T19:59:54.802Z"
+          },
+          "close": {
+            "price": 1.045,
+            "at": "2026-07-09T21:25:52.616Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1016",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "5.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "bet365": {
+          "open": {
+            "price": 1.03,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.04,
+            "at": "2026-07-05T07:31:17.503Z"
+          },
+          "close": {
+            "price": 1.04,
+            "at": "2026-07-09T20:08:17.145Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.02,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.056,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.016,
+            "at": "2026-07-09T21:31:47.318Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10232",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.02,
+            "at": "2026-07-08T20:01:37.066Z"
+          },
+          "peak": {
+            "price": 1.04,
+            "at": "2026-07-09T20:25:38.406Z"
+          },
+          "close": {
+            "price": 1.04,
+            "at": "2026-07-09T20:25:38.406Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.01,
+            "at": "2026-07-09T19:22:37.489Z"
+          },
+          "peak": {
+            "price": 1.032,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.02,
+            "at": "2026-07-09T21:42:18.229Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1080",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "1",
+      "outcomeName": "1",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.02,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.03,
+            "at": "2026-07-07T21:37:07.720Z"
+          },
+          "close": {
+            "price": 1.02,
+            "at": "2026-07-09T20:00:10.120Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10244",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.03,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.03,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "close": {
+            "price": 1.03,
+            "at": "2026-07-09T20:00:03.094Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.01,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.025,
+            "at": "2026-07-09T19:48:08.793Z"
+          },
+          "close": {
+            "price": 1.016,
+            "at": "2026-07-09T20:28:46.400Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "102210",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "2.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.03,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.03,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "close": {
+            "price": 1.03,
+            "at": "2026-07-09T19:12:49.543Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "102222",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.03,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "peak": {
+            "price": 1.03,
+            "at": "2026-07-04T23:36:28.675Z"
+          },
+          "close": {
+            "price": 1.03,
+            "at": "2026-07-09T19:12:49.543Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1018",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "6.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "bet365": {
+          "open": {
+            "price": 1.01,
+            "at": "2026-07-05T00:43:03.135Z"
+          },
+          "peak": {
+            "price": 1.02,
+            "at": "2026-07-05T00:52:21.421Z"
+          },
+          "close": {
+            "price": 1.01,
+            "at": "2026-07-09T20:05:44.487Z"
+          }
+        },
+        "1xbet": {
+          "open": {
+            "price": 1.006,
+            "at": "2026-07-05T01:39:15.516Z"
+          },
+          "peak": {
+            "price": 1.016,
+            "at": "2026-07-09T20:25:35.188Z"
+          },
+          "close": {
+            "price": 1.016,
+            "at": "2026-07-09T20:28:46.400Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1084",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "1.5",
+      "outcomeName": "1",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.02,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "peak": {
+            "price": 1.02,
+            "at": "2026-07-05T00:49:59.413Z"
+          },
+          "close": {
+            "price": 1.01,
+            "at": "2026-07-09T20:00:10.120Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10134",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "2",
+      "outcomeName": "1",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.01,
+            "at": "2026-07-07T06:48:38.379Z"
+          },
+          "peak": {
+            "price": 1.02,
+            "at": "2026-07-09T20:20:10.699Z"
+          },
+          "close": {
+            "price": 1.01,
+            "at": "2026-07-09T21:20:26.959Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "10246",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "stake": {
+          "open": {
+            "price": 1.01,
+            "at": "2026-07-09T00:29:00.212Z"
+          },
+          "peak": {
+            "price": 1.01,
+            "at": "2026-07-09T00:29:00.212Z"
+          },
+          "close": {
+            "price": 1.01,
+            "at": "2026-07-09T20:00:03.094Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1020",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "7.5",
+      "outcomeName": "Under",
+      "perBook": {
+        "1xbet": {
+          "open": {
+            "price": 1.002,
+            "at": "2026-07-07T10:13:02.615Z"
+          },
+          "peak": {
+            "price": 1.002,
+            "at": "2026-07-07T10:13:02.615Z"
+          },
+          "close": {
+            "price": 1.002,
+            "at": "2026-07-09T07:36:43.696Z"
+          }
+        }
+      }
+    },
+    {
+      "marketId": "1022",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "8.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "1024",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-6",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1026",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-5.75",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1028",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-5.5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1030",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-5.25",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1032",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1034",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-4.75",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1036",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-4.5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1038",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-4.25",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1040",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "-4",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "1082",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "1.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "1086",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "1.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "1088",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "2",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "1090",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "2.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "1092",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "2.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "1094",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "2.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "1096",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "3",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "1098",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "3.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10100",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "3.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10102",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "3.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10104",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "4",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10106",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "4.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10108",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "4.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10110",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "4.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10112",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10114",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "5.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10116",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "5.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10118",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "5.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10120",
+      "marketName": "Asian Handicap",
+      "canonical": "ASIAN_HANDICAP",
+      "line": "6",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10122",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "6",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10125",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10128",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "4",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10131",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "3",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10152",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "-5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10155",
+      "marketName": "European Handicap",
+      "canonical": "EUROPEAN_HANDICAP",
+      "line": "-6",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10158",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "0.25",
+      "outcomeName": "Over",
+      "perBook": {}
+    },
+    {
+      "marketId": "10190",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "5.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10192",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "6",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10194",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "6.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10196",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "6.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10198",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "7",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10200",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "7.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10202",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "7.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10204",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "8",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10206",
+      "marketName": "Over Under Full Time",
+      "canonical": "OVER_UNDER_FT",
+      "line": "8.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10234",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10236",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "6.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10238",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "7.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10248",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10250",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10252",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "6.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10254",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "7.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10262",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "3.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10264",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "4.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10266",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "5.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10268",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "6.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10400",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "0.25",
+      "outcomeName": "Over",
+      "perBook": {}
+    },
+    {
+      "marketId": "10402",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "0.75",
+      "outcomeName": "Over",
+      "perBook": {}
+    },
+    {
+      "marketId": "10404",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1",
+      "outcomeName": "Over",
+      "perBook": {}
+    },
+    {
+      "marketId": "10406",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1.25",
+      "outcomeName": "Over",
+      "perBook": {}
+    },
+    {
+      "marketId": "10408",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1.75",
+      "outcomeName": "Over",
+      "perBook": {}
+    },
+    {
+      "marketId": "10412",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "2.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10414",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "2.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10416",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10418",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10420",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10422",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10424",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10426",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10428",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10430",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10432",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10434",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "6",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10436",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "6.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10438",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "6.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10440",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "7",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10442",
+      "marketName": "Over Under Team 1",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "7.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10444",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "0.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10446",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "0.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10448",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10450",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10452",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10454",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10456",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10458",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10460",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10462",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10464",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10466",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10468",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10470",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10472",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10474",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10476",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10478",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "6",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10480",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "6.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10482",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "6.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10484",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "7",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10486",
+      "marketName": "Over Under Team 2",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "7.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10488",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "0.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10490",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "0.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10492",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "1",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10494",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "1.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10496",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "1.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10498",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "2",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10500",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "2.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10502",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "2.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10504",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "3",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10506",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "3.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10508",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "3.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10510",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "4",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10512",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "4.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10514",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "4.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10516",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10518",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "5.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10520",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "5.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10522",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "6",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10524",
+      "marketName": "Over Under First Half",
+      "canonical": "OVER_UNDER_1H",
+      "line": "6.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "10564",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10566",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-4.75",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10568",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-4.5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10570",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-4.25",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10572",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-4",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10574",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-3.75",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10576",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-3.5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10578",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-3.25",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10580",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-3",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10582",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-2.75",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10584",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-2.5",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10586",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-2.25",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10588",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-2",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10590",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-1.75",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10594",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-1.25",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10596",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "-1",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "10606",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "0.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10610",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "0.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10612",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "1",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10614",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "1.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10616",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "1.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10618",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "1.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10620",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "2",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10622",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "2.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10624",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "2.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10626",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "2.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10628",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "3",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10630",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "3.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10632",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "3.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10634",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "3.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10636",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "4",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10638",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "4.25",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10640",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "4.5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10642",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "4.75",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10644",
+      "marketName": "Asian Handicap First Half",
+      "canonical": "ASIAN_HANDICAP_1H",
+      "line": "5",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "10728",
+      "marketName": "Winner (incl. overtime)",
+      "canonical": null,
+      "line": "0",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "102212",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102214",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102216",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102218",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "6.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102224",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102226",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102228",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102230",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102232",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "6.5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102262",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "0.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102264",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "0.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102266",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102268",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102270",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "1.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102272",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "2",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102274",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "2.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102276",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "2.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102278",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102280",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102282",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "3.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102284",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102286",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102288",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "4.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102290",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102292",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102294",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "5.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102296",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "6",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102298",
+      "marketName": "Over Under Team 1 First Half",
+      "canonical": "OVER_UNDER_TEAM1",
+      "line": "6.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102300",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "0.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102302",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "0.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102304",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102306",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102308",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "1.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102310",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102312",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102314",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "2.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102316",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102318",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102320",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "3.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102322",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102324",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102326",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "4.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102328",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102330",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102332",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "5.75",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102334",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "6",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102336",
+      "marketName": "Over Under Team 2 First Half",
+      "canonical": "OVER_UNDER_TEAM2",
+      "line": "6.25",
+      "outcomeName": "Under",
+      "perBook": {}
+    },
+    {
+      "marketId": "102414",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "4",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "102417",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "3",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "102420",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "2",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "102423",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "1",
+      "outcomeName": "1",
+      "perBook": {}
+    },
+    {
+      "marketId": "102426",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "-1",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "102429",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "-2",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "102432",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "-3",
+      "outcomeName": "2",
+      "perBook": {}
+    },
+    {
+      "marketId": "102435",
+      "marketName": "European Handicap First Half",
+      "canonical": "EUROPEAN_HANDICAP_1H",
+      "line": "-4",
+      "outcomeName": "2",
+      "perBook": {}
+    }
+  ]
+}

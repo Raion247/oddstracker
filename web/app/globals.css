@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-deep: #041833;
+  --color-navy: #0a2247;
+  --color-navy-light: #123262;
+  --color-navy-lighter: #1b3f76;
+  --color-navy-border: #24518f;
+  --color-brand-green: #00b451;
+  --color-brand-green-dark: #009543;
+  --color-gold: #ffc72c;
+  --color-danger: #e5484d;
+  --color-muted: #9db2ce;
+}
+
+@layer base {
+  body {
+    color: #ffffff;
+    background: linear-gradient(180deg, #041833 0%, #091e3f 100%) fixed;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+}
