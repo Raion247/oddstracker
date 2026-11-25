@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Highest Multi That Hit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #101418;
+    --panel: #171c22;
+    --panel2: #1d242c;
+    --line: #2a333d;
+    --text: #dfe6ec;
+    --dim: #8b98a5;
+    --odds: #f5b942;      /* odds-board amber */
+    --win: #57c98a;
+    --halfwin: #b7c957;
+    --bad: #e06c5f;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+    --disp: "Barlow Condensed", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 14px/1.5 -apple-system, "Segoe UI", sans-serif;
+    padding: 24px 16px 64px; max-width: 980px; margin: 0 auto;
+  }
+  h1, h2 { font-family: var(--disp); font-weight: 600; letter-spacing: .02em; }
+
+  /* drop zone */
+  #drop {
+    border: 2px dashed var(--line); border-radius: 10px; padding: 60px 20px;
+    text-align: center; color: var(--dim); cursor: pointer; margin-top: 10vh;
+    transition: border-color .15s, background .15s;
+  }
+  #drop.over { border-color: var(--odds); background: var(--panel); }
+  #drop b { color: var(--text); }
+  #drop input { display: none; }
+
+  /* header */
+  .matchhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+  .matchhead h1 { font-size: 34px; text-transform: uppercase; }
+  .score { font-family: var(--mono); font-size: 26px; color: var(--odds); font-weight: 600; }
+  .meta { color: var(--dim); font-size: 13px; margin-bottom: 20px; }
+  .meta span + span::before { content: " · "; color: var(--line); }
+
+  /* hero */
+  .hero {
+    background: linear-gradient(180deg, var(--panel2), var(--panel));
+    border: 1px solid var(--line); border-radius: 12px;
+    padding: 26px 28px; margin-bottom: 26px;
+    display: grid; grid-template-columns: auto 1fr; gap: 6px 28px; align-items: center;
+  }
+  .hero .big {
+    font-family: var(--mono); font-weight: 600; color: var(--odds);
+    font-size: clamp(56px, 12vw, 96px); line-height: 1; grid-row: span 2;
+  }
+  .hero .what { font-family: var(--disp); font-size: 24px; font-weight: 600; align-self: end; }
+  .hero .detail { color: var(--dim); font-family: var(--mono); font-size: 13px; align-self: start; }
+  .hero .eyebrow {
+    grid-column: 1 / -1; font-family: var(--disp); text-transform: uppercase;
+    letter-spacing: .14em; font-size: 13px; color: var(--dim); margin-bottom: 6px;
+  }
+
+  /* summary chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
+  .chip {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
+    padding: 5px 14px; font-size: 12.5px; color: var(--dim);
+  }
+  .chip b { color: var(--text); font-family: var(--mono); font-weight: 500; }
+  .chip.warn { border-color: #5a4030; color: #d8a468; }
+
+  /* winners table */
+  h2 { font-size: 20px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th {
+    text-align: left; font-family: var(--disp); font-weight: 600; font-size: 13px;
+    text-transform: uppercase; letter-spacing: .08em; color: var(--dim);
+    padding: 8px 10px; border-bottom: 1px solid var(--line);
+  }
+  td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: baseline; }
+  tr.row { cursor: pointer; }
+  tr.row:hover td { background: var(--panel); }
+  td.odds { font-family: var(--mono); font-weight: 600; color: var(--odds); font-size: 15px; white-space: nowrap; }
+  td.mono { font-family: var(--mono); color: var(--dim); font-size: 12.5px; white-space: nowrap; }
+  .res { font-family: var(--mono); font-size: 11px; padding: 2px 7px; border-radius: 4px; }
+  .res.WIN { color: var(--win); border: 1px solid #2c4a3a; }
+  .res.HALFWIN { color: var(--halfwin); border: 1px solid #47502c; }
+  .tag { font-size: 10.5px; color: var(--dim); border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px; margin-left: 6px; }
+  .mkt { font-weight: 500; }
+  .mkt small { color: var(--dim); font-weight: 400; }
+
+  /* expanded per-book */
+  tr.expand td { background: var(--panel); padding: 10px 10px 14px 34px; }
+  .books { display: flex; flex-wrap: wrap; gap: 10px; }
+  .book {
+    background: var(--panel2); border: 1px solid var(--line); border-radius: 8px;
+    padding: 8px 12px; font-family: var(--mono); font-size: 12px;
+  }
+  .book b { display: block; font-family: var(--disp); font-size: 14px; letter-spacing: .04em; color: var(--text); margin-bottom: 3px; }
+  .book span { color: var(--dim); }
+  .book i { font-style: normal; color: var(--odds); }
+
+  footer { margin-top: 30px; color: var(--dim); font-size: 12px; }
+  @media (max-width: 640px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero .big { grid-row: auto; }
+    .hide-sm { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="drop">
+  <p><b>Drop analysis.json here</b> or click to pick the file</p>
+  <p style="margin-top:6px">Generated by <code>node analyze.js &lt;fixtureId&gt;</code> — found in <code>data/&lt;fixtureId&gt;/analysis.json</code></p>
+  <input type="file" id="file" accept=".json,application/json">
+</div>
+
+<div id="app" hidden></div>
+
+<script>
+const drop = document.getElementById("drop");
+const fileInput = document.getElementById("file");
+const app = document.getElementById("app");
+
+drop.addEventListener("click", () => fileInput.click());
+drop.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("over"); });
+drop.addEventListener("dragleave", () => drop.classList.remove("over"));
+drop.addEventListener("drop", e => {
+  e.preventDefault(); drop.classList.remove("over");
+  const f = e.dataTransfer.files[0];
+  if (f) readFile(f);
+});
+fileInput.addEventListener("change", () => fileInput.files[0] && readFile(fileInput.files[0]));
+
+function tryRender(d) {
+  try { render(d); }
+  catch (e) {
+    drop.hidden = true; app.hidden = false;
+    app.innerHTML = `<div style="padding:40px;color:#e06c5f;font-family:monospace">
+      <h2 style="color:#dfe6ec">Report failed to render</h2>
+      <p style="margin-top:10px">${String(e && e.stack || e).replace(/</g, "&lt;")}</p>
+      <p style="margin-top:10px;color:#8b98a5">Copy this error and report it.</p></div>`;
+  }
+}
+
+function readFile(f) {
+  const r = new FileReader();
+  r.onload = () => {
+    try { render(JSON.parse(r.result)); }
+    catch (e) { alert("Could not parse that file as JSON: " + e.message); }
+  };
+  r.readAsText(f);
+}
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtOdds = p => p == null ? "—" : (Number(p) % 1 === 0 ? p + "x" : Number(p).toFixed(2).replace(/\.?0+$/, "") + "x");
+const fmtTime = t => t ? new Date(t).toISOString().replace("T", " ").slice(0, 19) + " UTC" : "—";
+
+function periodScore(d) {
+  const p = d?.scores?.scores?.periods;
+  const s = p?.result ?? p?.fulltime;
+  return s ? `${s.participant1Score}\u2013${s.participant2Score}` : null;
+}
+
+function label(w) {
+  const line = (w.line != null && String(w.line) !== "0") ? ` <small>[line ${esc(w.line)}]</small>` : "";
+  return `${esc(w.marketName)}${line} — <b>${esc(w.outcomeName ?? w.outcomeId)}</b>`;
+}
+
+function timelineSvg(top, d) {
+  // kickoff + match-minute for each peak
+  const ko = new Date(d.match?.startTime ?? Date.now()).getTime();
+  const periods = d?.scores?.scores?.periods ?? {};
+  const updEnd = Object.values(periods).map(p => p?.updatedAt ? new Date(p.updatedAt).getTime() : null).filter(Boolean);
+  const endCut = (updEnd.length ? Math.max(...updEnd) : ko + 130 * 60000) + 3 * 60000;
+
+  // keep only IN-PLAY peaks: after kickoff, before match end, and not flagged pre-match
+  const inPlay = top.filter(w => {
+    if (!w.peak?.at || w.peakPhase === "pre-match") return false;
+    const t = new Date(w.peak.at).getTime();
+    return t > ko + 30000 && t <= endCut;   // >0.5' after KO
+  }).map(w => ({ w, min: Math.round((new Date(w.peak.at).getTime() - ko) / 60000) }));
+
+  if (!inPlay.length) return `<div style="color:#8b98a5;margin:14px 0 24px;font-size:13px">No in-play peaks to plot (all top multipliers peaked pre-match).</div>`;
+
+  // Show ET zones only if a peak actually lands beyond 90' — an ET match whose
+  // fetched markets all settled at 90' has no ET peaks, so ET zones would be empty.
+  const hasET = inPlay.some(p => p.min > 92);
+
+  // ---- zones: [label, matchMinStart, matchMinEnd, isStoppage] ----
+  // wall-clock minutes since KO. HT break ~15 real min sits between 1H and 2H.
+  const zones = [
+    { key: "1H",   label: "1st Half", a: 0,   b: 45,  stop: false },
+    { key: "1H+",  label: "45+",      a: 45,  b: 60,  stop: true  },  // 1H stoppage + HT break
+    { key: "2H",   label: "2nd Half", a: 60,  b: 105, stop: false },
+    { key: "2H+",  label: "90+",      a: 105, b: 120, stop: true  },
+  ];
+  if (hasET) zones.push(
+    { key: "ET1",  label: "ET 1",  a: 120, b: 135, stop: false },
+    { key: "ET1+", label: "105+",  a: 135, b: 138, stop: true  },
+    { key: "ET2",  label: "ET 2",  a: 138, b: 153, stop: false },
+    { key: "ET2+", label: "120+",  a: 153, b: 160, stop: true  },
+  );
+
+  // ---- geometry: each zone is a separate segment with a GAP between ----
+  const W = 900, H = 260, padL = 20, padR = 20, y = 122;
+  const GAP = 14;                             // visible gap between zones
+  const usableW = (W - padL - padR) - GAP * (zones.length - 1);
+  const totalMin = zones.reduce((s, z) => s + (z.b - z.a), 0);
+  let cx = padL;
+  for (const z of zones) {
+    z.w = ((z.b - z.a) / totalMin) * usableW;
+    z.x0 = cx; z.x1 = cx + z.w; cx = z.x1 + GAP;
+  }
+  const zoneOf = m => zones.find(z => m >= z.a && m < z.b) || zones[zones.length - 1];
+  const xOfMin = m => { const z = zoneOf(m); return z.x0 + ((m - z.a) / (z.b - z.a)) * z.w; };
+
+  let svg = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;margin:8px 0 22px">
+    <text x="${padL}" y="24" fill="#dfe6ec" font-size="15" font-family="var(--disp)" font-weight="600">Peak multipliers on the match clock</text>`;
+
+  // draw each zone segment + its label
+  for (const z of zones) {
+    const col = z.stop ? "#8a6a2a" : "#3a4a58";
+    svg += `<line x1="${z.x0.toFixed(1)}" y1="${y}" x2="${z.x1.toFixed(1)}" y2="${y}" stroke="${col}" stroke-width="${z.stop ? 2 : 3}"${z.stop ? ' stroke-dasharray="2 3"' : ""}/>`;
+    // end caps
+    svg += `<line x1="${z.x0.toFixed(1)}" y1="${y - 5}" x2="${z.x0.toFixed(1)}" y2="${y + 5}" stroke="${col}" stroke-width="1.5"/>`;
+    svg += `<text x="${((z.x0 + z.x1) / 2).toFixed(1)}" y="${y + 26}" fill="${z.stop ? "#a9822f" : "#8b98a5"}" font-size="10" text-anchor="middle" font-family="var(--mono)">${z.label}</text>`;
+  }
+
+  // lay out dots; nudge labels apart within the whole width
+  const laid = inPlay.sort((a, b) => a.min - b.min).map(p => ({ ...p, x: xOfMin(p.min) }));
+  const lab = laid.map(p => ({ x: p.x }));
+  const MINGAP = 58;
+  for (let i = 1; i < lab.length; i++) if (lab[i].x - lab[i - 1].x < MINGAP) lab[i].x = lab[i - 1].x + MINGAP;
+  const overflow = lab.length ? lab[lab.length - 1].x - (W - padR) : 0;
+  if (overflow > 0) for (const l of lab) l.x -= overflow;
+
+  laid.forEach((p, i) => {
+    const up = i % 2 === 0, lx = lab[i].x;
+    // connector end + two stacked text lines (odds bold, then outcome name)
+    // above: name on top, odds below it, connector to line
+    // below: odds first, name under it — both well clear of the zone labels at y+26
+    const connEnd = up ? y - 30 : y + 40;
+    const oddsY   = up ? y - 34 : y + 56;   // bold multiplier
+    const nameY   = up ? y - 49 : y + 70;   // outcome + minute, 14px from odds either way
+    svg += `<line x1="${p.x.toFixed(1)}" y1="${y}" x2="${lx.toFixed(1)}" y2="${connEnd}" stroke="#2a333d"/>`;
+    svg += `<circle cx="${p.x.toFixed(1)}" cy="${y}" r="5" fill="var(--odds)"/>`;
+    svg += `<text x="${lx.toFixed(1)}" y="${oddsY.toFixed(1)}" fill="var(--odds)" font-size="14" font-family="var(--mono)" font-weight="600" text-anchor="middle">${fmtOdds(p.w.peak.price)}</text>`;
+    svg += `<text x="${lx.toFixed(1)}" y="${nameY.toFixed(1)}" fill="#8b98a5" font-size="10" text-anchor="middle">${esc(p.w.outcomeName ?? p.w.outcomeId)} · ${p.min}'</text>`;
+  });
+  svg += `</svg>`;
+  return svg;
+}
+
+function render(d) {
+  drop.hidden = true;
+  app.hidden = false;
+
+  const m = d.match ?? {};
+  if (m.home && m.away) document.title = `${m.home} vs ${m.away}`;
+  const winners = (d.winners ?? []).filter(w => w.peak);
+  const top = d.highestMultiThatHit;
+  const score = periodScore(d);
+
+  let html = `
+    <div class="matchhead">
+      <h1>${esc(m.home ?? "?")} vs ${esc(m.away ?? "?")}</h1>
+      ${score ? `<span class="score">${score}</span>` : ""}
+    </div>
+    <div class="meta">
+      <span>${esc(m.tournament ?? "")}</span>
+      <span>${fmtTime(m.startTime)}</span>
+      <span>books: ${(d.bookmakers ?? []).map(esc).join(", ")}</span>
+    </div>`;
+
+  if (top) {
+    html += `
+    <div class="hero">
+      <div class="eyebrow">Highest multiplier that hit</div>
+      <div class="big">${fmtOdds(top.peak?.price)}</div>
+      <div class="what">${label(top)}</div>
+      <div class="detail">peak @ ${esc(top.peak?.book)} · ${fmtTime(top.peak?.at)} · opened ${fmtOdds(top.open?.price)}${top.peakPhase ? " · " + esc(top.peakPhase) + " peak" : ""}</div>
+    </div>`;
+  }
+
+  html += `<div class="chips">
+      <div class="chip">winning outcomes <b>${d.totals?.winningOutcomes ?? winners.length}</b></div>
+      <div class="chip">settled <b>${d.totals?.settledOutcomes ?? "—"}</b></div>
+      ${d.totals?.settlementMismatches ? `<div class="chip warn">feed grading errors excluded <b>${d.totals.settlementMismatches}</b></div>` : ""}
+      <div class="chip">generated <b>${fmtTime(d.generatedAt)}</b></div>
+    </div>` + timelineSvg(winners.slice(0, 10), d) + `
+
+    <h2>Winning multipliers</h2>
+    <table>
+      <thead><tr>
+        <th></th><th>Peak</th><th>Market — outcome</th>
+        <th class="hide-sm">Opened</th><th class="hide-sm">Book</th><th>Peak time</th>
+      </tr></thead><tbody>`;
+
+  winners.forEach((w, i) => {
+    html += `
+      <tr class="row" data-i="${i}">
+        <td><span class="res ${esc(w.result)}">${esc(w.result)}</span></td>
+        <td class="odds">${fmtOdds(w.peak.price)}</td>
+        <td class="mkt">${label(w)}${w.peakPhase === "pre-match" ? '<span class="tag">pre-match peak</span>' : ""}${w.settlementSource === "computed" ? '<span class="tag">graded from score</span>' : ""}</td>
+        <td class="mono hide-sm">${fmtOdds(w.open?.price)}</td>
+        <td class="mono hide-sm">${esc(w.peak.book)}</td>
+        <td class="mono">${fmtTime(w.peak.at)}</td>
+      </tr>`;
+  });
+
+  html += `</tbody></table>
+    <footer>HALFWIN = quarter-line bet: half the stake won at the shown odds, half refunded.
+    Peaks are the highest price recorded in the odds history up to full time, across all loaded bookmakers.</footer>`;
+
+  app.innerHTML = html;
+
+  // expandable per-book rows
+  app.querySelectorAll("tr.row").forEach(tr => {
+    tr.addEventListener("click", () => {
+      const next = tr.nextElementSibling;
+      if (next && next.classList.contains("expand")) { next.remove(); return; }
+      app.querySelectorAll("tr.expand").forEach(e => e.remove());
+      const w = winners[Number(tr.dataset.i)];
+      const cells = Object.entries(w.perBook ?? {}).map(([book, b]) => `
+        <div class="book"><b>${esc(book)}</b>
+          <span>open</span> ${fmtOdds(b.open?.price)} → <span>peak</span> <i>${fmtOdds(b.peak?.price)}</i> → <span>close</span> ${fmtOdds(b.close?.price)}<br>
+          <span>${b.snapshots} snapshots · peak ${fmtTime(b.peak?.at)}</span>
+        </div>`).join("");
+      const row = document.createElement("tr");
+      row.className = "expand";
+      row.innerHTML = `<td colspan="6"><div class="books">${cells || "no price data"}</div></td>`;
+      tr.after(row);
+    });
+  });
+}
+
+// bootstrap - must run after all declarations above are initialized
+if (window.__DATA__) tryRender(window.__DATA__);           // data embedded by analyze.js
+else fetch("analysis.json").then(r => r.ok ? r.json() : null)
+  .then(d => d && tryRender(d)).catch(() => {});           // same-dir json via local server
+</script>
+</body>
+</html>
